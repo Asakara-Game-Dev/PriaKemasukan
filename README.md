@@ -11,7 +11,7 @@ Semoga hari kalian... selalu **mendung**! ☁️
 <h2 style="cursor: pointer; transition: color 0.3s ease-in-out;" onmouseover="this.style.color='#f39c12';" onmouseout="this.style.color='';">Petunjuk Penyetoran Kontribusi:</h2>
 
 1.  Lakukan *fork* pada repository ini.
-2.  Buat *branch* baru untuk fitur, *bug fix*, atau aset yang kalian kerjakan dengan format `nama_pengguna/deskripsi_kontribusi`. Contoh: `andi/implementasi_animasi_karakter`.
+2.  Buat *branch* baru untuk fitur, *bug fix*, atau aset yang kalian kerjakan dengan format `nama_pengguna/deskripsi_kontribusi`. Contoh: `rangga/implementasi_animasi_karakter`.
 3.  Lakukan *commit* secara berkala dengan pesan yang jelas dan informatif, terkait dengan *game development*.
 4.  Setelah selesai, ajukan *pull request* dari *branch* kalian ke *branch* `main` atau `master` (sesuai dengan konfigurasi repository).
 5.  Pastikan kode atau aset kalian telah diuji dan terintegrasi dengan baik, serta tidak ada konflik dengan *branch* utama.
