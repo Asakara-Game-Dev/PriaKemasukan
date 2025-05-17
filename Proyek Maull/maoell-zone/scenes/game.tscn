@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=4 uid="uid://bqy158aen15uv"]
+[gd_scene load_steps=19 format=4 uid="uid://bqy158aen15uv"]
 
 [ext_resource type="PackedScene" uid="uid://6xif10cn1hi" path="res://scenes/player.tscn" id="1_aud7u"]
 [ext_resource type="Texture2D" uid="uid://qwwufpqo7nir" path="res://assets/sprites/world_tileset.png" id="2_d80jn"]
@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://c24irlcvufybc" path="res://scenes/coin.tscn" id="5_y6dnb"]
 [ext_resource type="PackedScene" uid="uid://bsha1p2h4at8r" path="res://scenes/killzone.tscn" id="6_7wt6g"]
 [ext_resource type="FontFile" uid="uid://bw3l6dehr1qgd" path="res://assets/fonts/PixelOperator8.ttf" id="7_f5rds"]
+[ext_resource type="PackedScene" uid="uid://tdaak2lklisa" path="res://scenes/falling_up.tscn" id="8_gee14"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3mq6h"]
 texture = ExtResource("2_d80jn")
@@ -680,7 +681,7 @@ tile_map_data = PackedByteArray("AAA0AAAAAAAGAAQAAAA1AAAAAAAIAAQAAAA3AP//AAAIAAQ
 tile_set = SubResource("TileSet_8cyfl")
 
 [node name="player" parent="." instance=ExtResource("1_aud7u")]
-position = Vector2(-1, 0)
+position = Vector2(0, -6)
 
 [node name="Camera2D" type="Camera2D" parent="player"]
 position = Vector2(-1, 4)
@@ -760,3 +761,6 @@ theme_override_fonts/font = ExtResource("7_f5rds")
 theme_override_font_sizes/font_size = 7
 text = "GG Juga ternyata luwh"
 autowrap_mode = 2
+
+[node name="falling up" parent="." instance=ExtResource("8_gee14")]
+position = Vector2(66, 19)
