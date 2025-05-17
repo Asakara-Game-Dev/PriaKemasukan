@@ -690,6 +690,7 @@ limit_bottom = 90
 position_smoothing_enabled = true
 
 [node name="Killzone" parent="." instance=ExtResource("6_7wt6g")]
+visible = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone"]
 position = Vector2(-2, 4)
