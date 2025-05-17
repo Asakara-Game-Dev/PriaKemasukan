@@ -2,8 +2,8 @@
 
 [ext_resource type="Script" uid="uid://dd3enh2x4imut" path="res://scene/player.gd" id="1_fvtld"]
 [ext_resource type="Texture2D" uid="uid://dkvqhfp56iob1" path="res://assets/Main Charakter/Attack/Mas MC Basic Attack 2x.png" id="1_xo3ru"]
-[ext_resource type="Texture2D" uid="uid://b3vvbg4ouce4s" path="res://assets/Main Charakter/Idle/Mas MC Idle.png" id="2_hjaqi"]
-[ext_resource type="Texture2D" uid="uid://m5spil610j1w" path="res://assets/Main Charakter/Running/Mas MC Running160525.png" id="4_ct4mp"]
+[ext_resource type="Texture2D" uid="uid://bqjko01u3baey" path="res://assets/Main Charakter/Idle/Mas MC Idle - Copy.png" id="3_ct4mp"]
+[ext_resource type="Texture2D" uid="uid://cygg6twwcny87" path="res://assets/Main Charakter/Running/Mas MC Running160525 - Copy.png" id="4_s4jxa"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_hjaqi"]
 atlas = ExtResource("1_xo3ru")
@@ -30,75 +30,75 @@ atlas = ExtResource("1_xo3ru")
 region = Rect2(0, 11250, 2250, 2250)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_g2vtq"]
-atlas = ExtResource("2_hjaqi")
+atlas = ExtResource("3_ct4mp")
 region = Rect2(0, 0, 1700, 1400)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_2fvbb"]
-atlas = ExtResource("2_hjaqi")
+atlas = ExtResource("3_ct4mp")
 region = Rect2(0, 1400, 1700, 1400)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ml7e8"]
-atlas = ExtResource("2_hjaqi")
+atlas = ExtResource("3_ct4mp")
 region = Rect2(0, 2800, 1700, 1400)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ihjo1"]
-atlas = ExtResource("2_hjaqi")
+atlas = ExtResource("3_ct4mp")
 region = Rect2(0, 4200, 1700, 1400)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_dk1vr"]
-atlas = ExtResource("2_hjaqi")
+atlas = ExtResource("3_ct4mp")
 region = Rect2(0, 5600, 1700, 1400)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_34jf3"]
-atlas = ExtResource("2_hjaqi")
+atlas = ExtResource("3_ct4mp")
 region = Rect2(0, 7000, 1700, 1400)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_u7b46"]
-atlas = ExtResource("2_hjaqi")
+atlas = ExtResource("3_ct4mp")
 region = Rect2(0, 8400, 1700, 1400)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_j4wxg"]
-atlas = ExtResource("2_hjaqi")
+atlas = ExtResource("3_ct4mp")
 region = Rect2(0, 9800, 1700, 1400)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_bup7g"]
-atlas = ExtResource("2_hjaqi")
+atlas = ExtResource("3_ct4mp")
 region = Rect2(0, 11200, 1700, 1400)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_4ja17"]
-atlas = ExtResource("2_hjaqi")
+atlas = ExtResource("3_ct4mp")
 region = Rect2(0, 12600, 1700, 1400)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_v4iqv"]
-atlas = ExtResource("4_ct4mp")
+atlas = ExtResource("4_s4jxa")
 region = Rect2(0, 0, 1700, 1400)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_42h83"]
-atlas = ExtResource("4_ct4mp")
+atlas = ExtResource("4_s4jxa")
 region = Rect2(0, 1400, 1700, 1400)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_iuf2t"]
-atlas = ExtResource("4_ct4mp")
+atlas = ExtResource("4_s4jxa")
 region = Rect2(0, 2800, 1700, 1400)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_jrjdb"]
-atlas = ExtResource("4_ct4mp")
+atlas = ExtResource("4_s4jxa")
 region = Rect2(0, 4200, 1700, 1400)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_kk4ol"]
-atlas = ExtResource("4_ct4mp")
+atlas = ExtResource("4_s4jxa")
 region = Rect2(0, 5600, 1700, 1400)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_4reak"]
-atlas = ExtResource("4_ct4mp")
+atlas = ExtResource("4_s4jxa")
 region = Rect2(0, 7000, 1700, 1400)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_wt23p"]
-atlas = ExtResource("4_ct4mp")
+atlas = ExtResource("4_s4jxa")
 region = Rect2(0, 8400, 1700, 1400)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_k8m7u"]
-atlas = ExtResource("4_ct4mp")
+atlas = ExtResource("4_s4jxa")
 region = Rect2(0, 9800, 1700, 1400)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_4qnqm"]
@@ -207,10 +207,8 @@ script = ExtResource("1_fvtld")
 position = Vector2(-4, 15)
 scale = Vector2(0.04, 0.04)
 sprite_frames = SubResource("SpriteFrames_4qnqm")
-animation = &"idle"
+animation = &"running"
 autoplay = "idle"
-frame = 9
-frame_progress = 1.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(8, 20)
