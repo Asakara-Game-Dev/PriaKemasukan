@@ -370,9 +370,14 @@ script = ExtResource("1_55snq")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(1, 0)
 sprite_frames = SubResource("SpriteFrames_6en1t")
+<<<<<<< HEAD
+animation = &"rolling"
+autoplay = "idle"
+=======
 animation = &"running pt2"
 autoplay = "idle"
 frame_progress = 0.104354
+>>>>>>> 5a45b59b6b5b894f0c12bd629b2f0246fa56536f
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 4)
