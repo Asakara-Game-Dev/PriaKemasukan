@@ -4,17 +4,17 @@ const SPEED = 400.0
 const JUMP_VELOCITY = -900.0
 var dashing = false
 var dash_time = 0.0
-var max_dash_time = 0.2 # Dash lebih singkat supaya responsif
-const DASH_SPEED = 800
+var max_dash_time = 0.2 
+const DASH_SPEED = 1000
 @onready var sprite_2d = $Sprite2D
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 
 func _physics_process(delta):
-	# Debug print untuk cek input dash dan status dash
+	# Debug print 
 	if Input.is_action_just_pressed("dash"):
 		print("Dash input detected")
 
-	# Mulai dash jika tombol dash ditekan, sedang bergerak, dan tidak sedang dash
+	# HANDLE DASH
 	if Input.is_action_just_pressed("dash") and is_moving() and not dashing:
 		dash_time = 0
 		dashing = true
@@ -22,16 +22,15 @@ func _physics_process(delta):
 		velocity.x = DASH_SPEED * dash_direction
 		print("Dash started with velocity.x: ", velocity.x)
 
-	# Saat dash sedang berlangsung
 	if dashing:
 		dash_time += delta
-		velocity.y += gravity * delta # tetap terpengaruh gravitasi saat dash
-		velocity.x = velocity.x # pertahankan velocity.x dash
+		velocity.y += gravity * delta 
+		velocity.x = velocity.x 
 		if dash_time >= max_dash_time:
 			dashing = false
 			dash_time = 0
 			print("Dash ended")
-			velocity.x = 0 # Reset velocity horisontal setelah dash berakhir
+			velocity.x = 0 
 
 	else:
 		# Jika tidak dash, bisa lompat dan gerak normal
@@ -50,9 +49,9 @@ func _physics_process(delta):
 
 	# Set animasi
 	if not is_on_floor():
-		sprite_2d.animation = "jump"
+		sprite_2d.animation = "jumping"
 	elif abs(velocity.x) > 1:
-		sprite_2d.animation = "run"
+		sprite_2d.animation = "running"
 	else:
 		sprite_2d.animation = "default"
 
