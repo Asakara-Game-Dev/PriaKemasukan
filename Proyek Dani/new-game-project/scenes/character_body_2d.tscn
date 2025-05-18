@@ -150,8 +150,8 @@ animations = [{
 "texture": SubResource("AtlasTexture_7oyl4")
 }],
 "loop": true,
-"name": &"jump",
-"speed": 4.0
+"name": &"jumping",
+"speed": 7.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -179,7 +179,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_uduk5")
 }],
 "loop": true,
-"name": &"run",
+"name": &"running",
 "speed": 7.0
 }]
 
@@ -196,8 +196,9 @@ texture_filter = 1
 position = Vector2(22.6667, 11)
 scale = Vector2(0.0309926, 0.0300446)
 sprite_frames = SubResource("SpriteFrames_rsbhr")
+animation = &"running"
 autoplay = "default"
-frame_progress = 0.873113
+frame_progress = 0.944326
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 texture_filter = 1
