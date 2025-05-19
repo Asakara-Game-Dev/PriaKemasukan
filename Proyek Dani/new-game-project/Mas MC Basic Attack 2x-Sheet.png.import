@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bkutmricodc1a"
-path="res://.godot/imported/Jump (32x32).png-91bf01789c567d31f5c28cd22911709b.ctex"
+uid="uid://c2sc5v17poy6r"
+path="res://.godot/imported/Mas MC Basic Attack 2x-Sheet.png-66a2b5b1e0c00428ce859bd507be40e2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Jump (32x32).png"
-dest_files=["res://.godot/imported/Jump (32x32).png-91bf01789c567d31f5c28cd22911709b.ctex"]
+source_file="res://Mas MC Basic Attack 2x-Sheet.png"
+dest_files=["res://.godot/imported/Mas MC Basic Attack 2x-Sheet.png-66a2b5b1e0c00428ce859bd507be40e2.ctex"]
 
 [params]
 
