@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bg0xf5sng7oqn"
-path="res://.godot/imported/Mas MC Idle.png-2247eb9a5980aeee1fe72133e2b7bf41.ctex"
+uid="uid://kqc1ooe42fbm"
+path="res://.godot/imported/Mas MC dash-Sheet.png-7a7f463e1ba575de8d0a9fe7aeba6178.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Mas MC Idle.png"
-dest_files=["res://.godot/imported/Mas MC Idle.png-2247eb9a5980aeee1fe72133e2b7bf41.ctex"]
+source_file="res://Mas MC dash-Sheet.png"
+dest_files=["res://.godot/imported/Mas MC dash-Sheet.png-7a7f463e1ba575de8d0a9fe7aeba6178.ctex"]
 
 [params]
 
